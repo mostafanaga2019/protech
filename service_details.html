@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Drop-down Menu Bar</title>
+    <link rel="stylesheet" href="resources/css/customfont.css">
+    <link rel="stylesheet" href="vendors/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,600,700&display=swap&subset=arabic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+   <header>
+        <div class="wrapper">
+            <div class="container">
+                <div class="register container">
+                    <a href="signin.html">تسجيل الخروج</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="signup.html">انشاء حساب</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu_main container">
+            <div class="logo"><img src="resources/img/logo_dark.png"></div>
+            <div class="container">
+                <nav class="menu clearfix">
+                    <label for="btn" class="icon">
+                        <span class="fa fa-bars"></span>
+                    </label>
+                    <input type="checkbox" id="btn">
+                    <ul>
+                        <li> <a class="active menuselect" href="index.html">الرئيسية</a></li>
+                        <li>
+                            <label for="btn-1" class="show"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الإبل</label>
+                            <a class="menuselect" href="search_result.html"><i class="icon-left_arrow"></i>&nbsp;&nbsp; الإبل </a>
+                            <input type="checkbox" id="btn-1">
+                            <ul>
+                                <li class="camel"><a href="search_result.html">بعير</a></li>
+                                <li class="camel"><a href="search_result.html">ناقة</a></li>
+                                <li class="camel"><a href="search_result.html">حائل</a></li>
+                                <li class="camel"><a href="search_result.html">حاشي</a></li>
+                                <li class="camel"><a href="search_result.html">بكرة</a></li>
+                                <li class="camel"><a href="search_result.html">قعود</a></li>
+                                <li class="camel"><a href="search_result.html">جمل</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="btn-2" class="show"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الغنم</label>
+                            <a class="menuselect" href="search_result.html"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الغنم</a>
+                            <input type="checkbox" id="btn-2">
+                            <ul>
+                                <li class="cheap"><a href="/search_result.html">نعيم</a></li>
+                                <li class="cheap"><a href="search_result.html">حري</a></li>
+                                <li class="cheap"><a href="search_result.html">نجدي</a></li>
+                                <li class="cheap"><a href="search_result.html">سواكني</a></li>
+                                <li class="cheap"><a href="search_result.html">سوداني</a></li>
+                                <li class="cheap"><a href="search_result.html">بربري</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="btn-3" class="show"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الماعز</label>
+                            <a class="menuselect" href="search_result.html"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الماعز</a>
+                            <input type="checkbox" id="btn-3">
+                            <ul>
+                                <li class="goat"><a href="search_result.html">عارضي</a></li>
+                                <li class="goat"><a href="search_result.html">شامي</a></li>
+                                <li class="goat"><a href="search_result.html">هولندي</a></li>
+                                <li class="goat"><a href="search_result.html">حجازي</a></li>
+                                <li class="goat"><a href="search_result.html">قبرصي</a></li>
+                                <li class="goat"><a href="search_result.html">كشتي</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="btn-4" class="show"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الأبقار</label>
+                            <a class="menuselect" href="search_result.html"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الأبقار</a>
+                            <input type="checkbox" id="btn-4">
+                            <ul>
+                                <li class="caw"><a href="search_result.html">عجل</a></li>
+                                <li class="caw"><a href="search_result.html">ثور</a></li>
+                                <li class="caw"><a href="search_result.html">حوليّة</a></li>
+                                <li class="caw"><a href="search_result.html">بكّيرية</a></li>
+                                <li class="caw"><a href="search_result.html">ابكرة</a></li>
+                                <li class="caw"><a href="search_result.html">اعشرة</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="btn-5" class="show"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الخيل</label>
+                            <a class="menuselect" href="search_result.html"><i class="icon-left_arrow"></i>&nbsp;&nbsp; الخيل</a>
+                            <input type="checkbox" id="btn-5">
+                            <ul>
+                                <li class="horse"><a href="search_result.html">حصان</a></li>
+                                <li class="horse"><a href="search_result.html">فرس</a></li>
+                                <li class="horse"><a href="search_result.html">مهر</a></li>
+                                <li class="horse"><a href="search_result.html">مهره</a></li>
+                                <li class="horse"><a href="search_result.html">فلو</a></li>
+                                <li class="horse"><a href="search_result.html">فلوه</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <p class="addmedia"><a href="addmedia.html"> اضف اعلانك هنا</a></p>
+            <nav class="utility container clearfix">
+                <ul>
+                    <li>
+                        <a href="#"><i class="icon-credit"></i><span>i</span></a>
+                    </li>
+                    <li><a href="#"><i class="icon-fav_fill"></i><span>1</span></a></li>
+                    <li>
+                        <a href="#"><i class="icon-account"></i></a>
+                        <ul>
+                            <li id="mymed" class="mymedia"><a  href="#">إعلاناتي</a></li>
+                            <li id="mypays" class="mypays"><a href="#">مشترياتي</a></li>
+                            <li id="myfavs" class="myfavs"><a href="#">المفضلة</a></li>
+                            <li id="myevals" class="myevals"><a href="#">تقييماتي</a></li>
+                            <li id="settings" class="settings"><a href="#">الإعدادات</a></li>
+                            <li id="signout" class="signout"><a href="#">تسجيل الخروج</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    
+   <section>
+       <div class="container">
+           <div class="mflex">
+               <aside class="asidephoto">
+                   <div class="flex-content">
+                       <div id="container">
+                           <ul class="slide">
+                               <li class="first" id="slide-1"><img src="resources/img/image_1.jpg" alt="" /></li>
+                               <li id="slide-2"><img src="resources/img/image_2.jpg" alt="" /></li>
+                               <li id="slide-3"><img src="resources/img/image_3.jpg" alt="" /></li>
+                               <li id="slide-4"><img src="resources/img/image_4.jpg" alt="" /></li>
+                               <li id="slide-5"><img src="resources/img/image_5.jpg" alt="" /></li>
+                               <li id="slide-6"><img src="resources/img/image_6.jpg" alt="" /></li>
+                               <li id="slide-7"><img src="resources/img/image_7.jpg" alt="" /></li>
+                               <li id="slide-8">
+                                   <video style="width: 100%"  controls>
+                                        <source src="resources/video/mov_bbb.mp4" type="video/mp4">
+                                        Your browser does not support HTML5 video.
+                                    </video>
+                               </li>
+                           </ul>
+                           <ul class="thumbs">
+                               <li><a href="#slide-1"><img src="resources/img/image_1.jpg" /></a></li>
+                               <li><a href="#slide-2"><img src="resources/img/image_2.jpg" /></a></li>
+                               <li><a href="#slide-3"><img src="resources/img/image_3.jpg" /></a></li>
+                               <li><a href="#slide-4"><img src="resources/img/image_4.jpg" /></a></li>
+                               <li><a href="#slide-5"><img src="resources/img/image_5.jpg" /></a></li>
+                               <li><a href="#slide-6"><img src="resources/img/image_6.jpg" /></a></li>
+                               <li><a href="#slide-7"><img src="resources/img/image_7.jpg" /></a></li>
+                               <li><a href="#slide-8"><img src="resources/img/video-thumbnail.jpg" /></a></li>
+                           </ul>
+
+                       </div>
+                   </div>
+               </aside>
+               <aside class="aside-details">
+                   <div class="main-details">
+                       <div class="detailflex">
+                           <div class="categ">
+                               <p>الصنف</p>
+                               <figure>(الإبل)</figure>
+                           </div>
+                           
+                           <i class="icon-firect_right">
+                               <i class="icon-fav"></i>
+                               <span>
+                                   <figure>500</figure>
+                                   <figure>SAR</figure>
+                               </span>
+                           </i>
+                       </div>
+                       <p class="main-text">
+                           Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and
+                           typesetting-industry-Lorem
+                       </p>
+                   </div>
+                   <div class="main-details">
+                       <div class="detailflex">
+                           <div class="categ catplus">
+                               <p>تفاصيل الإعلان</p>
+                               <figure>&nbsp;</figure>
+                           </div>
+                       </div>
+                       <div class="mytype">
+                           <div class="typeflex">
+                               <div> 
+                                   <span>النوع </span>
+                                   <figure>عارضي</figure>
+                               </div>
+                               <div> 
+                                   <span>الوزن </span>
+                                   <figure> 5 kg</figure>
+                               </div>
+                           </div>
+                           <div class="typeflex animage"> 
+                               <span>العمر </span>
+                               <figure> 5 <p>سنة</p>
+                               </figure>
+                               <figure> 4 <p>شهر</p>
+                               </figure>
+                               <figure> 4 <p>يوم</p>
+                               </figure>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="main-details">
+                       <div class="detailflex">
+                           <div class="categ">
+                               <p>التقييم العام</p>
+                               <figure>&nbsp;</figure>
+                           </div>
+                           <span class="mygrade">
+                               <i class="icon-grade"></i>
+                               <i class="icon-grade"></i>
+                               <i class="icon-grade"></i>
+                               <i class="icon-grade"></i>
+                               <i class="icon-grade"></i>
+                           </span>
+                       </div>
+                       <div>
+                           <div class="rowflex">
+                               <div class="typeflex">
+                                   <span>إجمالي الربح</span>                                  
+                                   <figure>SAR</figure>
+                                   <figure>(500)</figure>
+                                   
+                               </div>
+                               <div class="typeflex gain">
+                                   <span>عدد المبيعات</span>
+                                   <figure> (10) </figure>
+                                   <figure> وحدات </figure>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="main-details">
+                       <div class="detailflex">
+                           <div class="categ catplus">
+                               <p>تفاصيل البائع</p>
+                               <figure>&nbsp;</figure>
+                           </div>
+                           <a class="lock">
+                               <i class="icon-lock"></i>
+                               <p>اظهار التفاصيل</p>
+                           </a>
+
+                       </div>
+                       <div class="hidden">
+                           <div>
+                               <div>
+                                   &nbsp;
+                               </div>
+                               <div>
+                                   &nbsp;
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <a href="credit.html" class="mybuy"> شراء <i class="icon-buy"></i></a>
+                   <p>برجاء الشراء أولا حتي تظهر لك كافه تفاصيل البائع </p>
+                   <div class="loction-time">
+                       <div> 
+                           <i class="icon-location"></i>
+                           <p>حائل</p>
+                       </div>
+                       <div> <i class="icon-location_bar"></i>
+                           <p>السويفلة</p>
+                       </div>
+                       <div> <i class="icon-clock"></i>
+                           <p>2020/3/5</p>
+                       </div>
+                   </div>
+
+
+               </aside>
+           </div>
+       </div>
+   </section> 
+  
+    
+    <div>
+        <div class="container">
+            <div class="footcontent">
+                <img class="logofooter" src="resources/img/logo_dark.png">
+                <div class="footer">
+                    <div class="flex-footer">
+                        <div>
+                            <span>نبزه عن سوق الوقفة</span>
+                            <p>يمكنك مراسلتنا على البريد الإلكتروني</p>
+                            <a class="email">soukelwakfaa@gmail.com</a>
+                        </div>
+                        <div class="low">
+                            <span>قــــانــوني</span>
+                            <a>الشروط والاحكام</a>
+                            <a>من نحن </a>
+                        </div>
+                        <div>
+                            <span>الـدعــم</span>
+                            <div class="call">
+                                <a>+968205841556</a><i class="icon-call"></i>
+                            </div>
+                            <div class="call">
+                                <a>+968205841556</a><i class="icon-watsapp"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <span>التواصل الاجتماعي</span>
+                            <div class="social">
+                                <a><i class="icon-facebook"></i></a>
+                                <a><i class="icon-twitter"></i></a>
+                                <a><i class="icon-snap"></i></a>
+                                <a><i class="icon-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                                
+                    
+                    <div class="footer-overlay"></div>
+                    <div class="copyright">
+                        <article>حقوق الطبع والنشر 2020 | جميع الحقوق محفوظة لدي سوق الوقفة </article>
+                    </div>
+                </div>
+            </div>
+            
+                
+        </div>
+    </div>
+   
+    <script src="vendors/js/jquery-3.3.1.min.js"></script>
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/js/rater.js"></script>  
+    <script src="vendors/js/html5shiv.js"></script>
+    <script src="resources/js/mainscript.js"></script>
+
+</body>
+
+</html>

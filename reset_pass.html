@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Drop-down Menu Bar</title>
+    <link rel="stylesheet" href="resources/css/customfont.css">
+    <link rel="stylesheet" href="vendors/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,600,700&display=swap&subset=arabic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  
+    
+   <section>
+        <div class="container wrap-sign">
+            
+                <aside class="rightbox signin-flex">
+                    <h2>إنشاء حساب</h2>
+                    <p>مرحبا بك فضلا قم بإدخال معلوماتك لاستعادة كلمة المرور </p>
+                    <div class="userInfo-sign user-credit">
+                        <aside  class="user-side sign-side">
+                            <form>
+                               <div class="inflex">
+                                    <div class="area">
+                                        <i class="icon-email"></i>
+                                        <input id="name" type="text" placeholder="البريد الإلكتروني" required>
+                                    </div>                                   
+                                    <span class="error hidden">رجاء ادخال البيانات بشكل سليم</span>
+                                </div>
+                                                              
+                                
+                               
+                                 <div class="inflex">
+                                     <a class="btn-full btn-sign">ارسال البريد</a>
+                                </div>
+                               
+                                
+                               
+                               
+                                
+                            </form>
+                        </aside>
+                       
+                        
+                    </div> 
+
+                </aside>
+                <aside class="leftbox">
+                    <a class="returnflex" href="index.html">
+                        <div class="myoverlay"></div>
+                        <h2>العودة للصفحة الرئيسية</h2>
+                        <img class="logo-white" src="resources/img/logo-white.svg">
+                    </a>
+                </aside>
+            
+       </div>
+    </section>
+    
+    <script>
+        var eye = document.getElementById('eye');
+        var reye = document.getElementById('reye');
+        var password = document.getElementById('password');
+        var repass = document.getElementById('repass');
+        eye.addEventListener('click', togglePass);
+        reye.addEventListener('click', togglePass);
+
+        function togglePass() {
+            reye.classList.toggle('showpass');
+            eye.classList.toggle('showpass');
+            (password.type == 'password') ? password.type = 'text':
+                password.type = 'password';
+
+            (repass.type == 'password') ? repass.type = 'text':
+                repass.type = 'password';
+
+
+        }
+    </script>
+   
+    <script src="vendors/js/jquery-3.3.1.min.js"></script>
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/js/rater.js"></script>  
+    <script src="vendors/js/html5shiv.js"></script>
+    <script src="resources/js/mainscript.js"></script>
+   
+   
+
+</body>
+
+</html>

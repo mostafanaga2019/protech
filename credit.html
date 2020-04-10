@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Drop-down Menu Bar</title>
+    <link rel="stylesheet" href="resources/css/customfont.css">
+    <link rel="stylesheet" href="vendors/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,600,700&display=swap&subset=arabic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+   <header>
+        <div class="wrapper">
+            <div class="container">
+                <div class="register container">
+                    <a href="signin.html">تسجيل الخروج</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="signup.html">انشاء حساب</a>
+                </div>
+            </div>
+        </div>
+       <div class="wrap-content">
+           <div class="container">
+               <div class="cancel-credit">
+                   <a href="service_details.html">إلغاء</a>
+               </div>
+
+           </div>
+       </div>
+      
+    </header> 
+    
+   <section>
+        <div class="container">
+            <div id="addmedia" class="recent">
+                
+                <div class="step-main">
+                    <div class="stepper">
+                        <div class="step">
+                            <div class="circ cir-full"></div>
+                            <p class="done">معلوماتك شخصية</p>
+                        </div>
+                        <div class="step">
+                            <div class="circ cir-ghost"></div>
+                            <p class="still">بطاقة الدفع</p>
+                        </div>
+                    </div>
+                    <div class="userInfo user-credit">
+                        <aside  class="user-side">
+                            <form>
+                               <div class="inflex">
+                                    <div class="area">
+                                        <i class="icon-account"></i>
+                                        <label for="name">الإسم بالكامل</label>
+                                        <input id="name" type="text" required>
+                                    </div>                                   
+                                    <span class="error hidden">رجاء ادخال البيانات بشكل سليم</span>
+                                </div>
+                                <div class="inflex">
+                                    <div class="area">
+                                        <i class="icon-account"></i>
+                                        <label for="surename">اللقب</label>
+                                        <input id="surename" type="text" required>
+                                    </div>
+                                    <span class="error hidden">رجاء ادخال البيانات بشكل سليم</span>
+                                </div>
+                                <div class="inflex">
+                                    <div class="area">
+                                        <i class="info icon-email"></i>
+                                        <label for="email">الايميل</label>
+                                        <input id="email" type="email" required>
+                                    </div>
+                                    <span class="error hidden">رجاء ادخال البيانات بشكل سليم</span>
+                                </div>
+                                <div class="inflex">
+                                    <div class="area">
+                                        <i class="info  icon-account_info"></i>
+                                        <label for="ident">رقم الهوية</label>
+                                        <input id="ident" type="text" required>
+                                    </div>
+                                    <span class="error hidden">رجاء ادخال البيانات بشكل سليم</span>
+                                </div>
+                                <div class="inflex">
+                                    <div class="area">
+                                        <i class="icon-call"></i>
+                                        <label for="phone">رقم الجوال</label>
+                                        <input id="phone" type="text">
+                                    </div>
+                                    <span class="error hidden">رجاء ادخال البيانات بشكل سليم</span>
+                                </div>
+                                <div class="inflex">
+                                    <div class="area">
+                                        <label>المدينة</label>
+                                        <i class="icon-location"></i>
+                                        <select class="area" name="slt-1" id="slt-1">                                            
+                                            <option></option>
+                                            <option value="1">المدينة</option>
+                                            <option value="2">المدينة</option>
+                                            <option value="3">المدينة</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <span class="error hidden">رجاء ادخال البيانات بشكل سليم</span>
+                                </div>
+                                <div class="inflex">
+                                    <div class="area">
+                                        <i class="icon-location_bar"></i>
+                                        <label for="region">الحي&nbsp;(إختياري)</label>
+                                        <select class="area" name="slt-1" id="slt-1">                                            
+                                            <option></option>
+                                            <option value="1">الحي</option>
+                                            <option value="2">الحي</option>
+                                            <option value="3">الحي</option>
+                                        </select>
+                                    </div>
+                                    <span class="error hidden">رجاء ادخال البيانات بشكل سليم</span>
+                                </div>
+                                
+                            </form>
+                        </aside>
+                        <aside class="credit-side hidden">
+                            <form>
+                                <div class="inflex">
+                                    <div class="area">
+                                        <label>وسيلة الدفع</label>
+                                        <i class="icon-right_arrow credit-type"></i>
+                                        <select onchange="showPaypal(this)" class="area" name="slt-1" id="slt-1">                                            
+                                            <option value="1" >VISA&nbsp;&nbsp;/&nbsp;&nbsp;MasterCard</option>                                            
+                                            <option value="2">PayPal</option>
+                                        </select>
+                                    </div>
+                                    <span class="small error">رجاء ادخال البيانات بشكل سليم</span>
+                                </div>
+                                <div id="visa" class="credit-visa">
+                                    <div class="card-No">
+                                        <i class="icon-credit"></i>
+                                        <input class="nomb" onkeypress="if(this.value.length==16) return false;" placeholder="رقم البطاقة" type="text">
+                                        <small class="small error hidden">رجاء ادخال البيانت بشكل سليم</small>
+                                       
+                                    </div>
+                                    <div class="card-confirm">
+                                        <div class="card-content" >
+                                            <i class="icon-lock"></i>
+                                            <input onkeypress="if(this.value.length==3) return false;" placeholder="رقم البطاقة CVV " class="cvv" type="text">
+                                            <small class="small error hidden">رجاء ادخال البيانت بشكل سليم</small>
+                                        </div>
+                                        <div class="card-content">
+                                            <i class="icon-date"></i>
+                                            <input onkeypress="if(this.value.length==5) return false;" onkeyup="formatString(event)" placeholder="MM/YY" class="card-date" type="text">  
+                                            <small class="small error hidden">رجاء ادخال البيانت بشكل سليم</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="paypal" class="credit-visa paypal hidden">
+                                    <div class="card-No">
+                                        <i class="icon-email"></i>
+                                        <input type="text" placeholder="بريد PayPal">
+                                        <small class="small error hidden">رجاء ادخال البيانت بشكل سليم</small>
+                                    </div>
+                                </div>
+                            </form>
+                        </aside>
+                        <aside>
+                            <div class="sell-data">
+                                <p class="selltype">اسم الصنف</p>
+                                <div class="sellimg">
+                                    <img src="resources/img/img_1.jpg">
+                                </div>
+                                
+                                <div class="price-flex">
+                                    <div class="myprice">
+                                        <p>قيمة الصنف</p>
+                                        <div>
+                                            <figure>500</figure>
+                                            <span>SAR</span>
+                                        </div>
+                                    </div>
+                                    <div class="myprice">
+                                        <p>قيمة العمولة</p>
+                                        <div>
+                                            <figure>10</figure>
+                                            <span>SAR</span>
+                                        </div>
+                                    </div>
+                                    <div class="myprice mytotal">
+                                        <p>إجمالي المطلوب</p>
+                                        <div>
+                                            <figure>510</figure>
+                                            <span>SAR</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="cation">
+                                    <p>تنوية </p>
+                                    <span>
+                                        قيمة العمولة التي تدفع للموقع 
+                                        غير قابله للاسترداد سواء في حاله قبول الصفقة او رفضها 
+                                    </span>
+                                    
+                                </div>
+                                
+                            </div>
+                        </aside>
+                    </div>                   
+                </div>
+            </div>
+            <div class="progress"><a onclick="contPay(this)" class="btn-ghost btn-confirm">متابعة</a></div>            
+            <div class="progress puplish hidden"><a class="btn-ghost btn-full btn-confirm">شراء</a></div>
+        </div>
+    </section>
+  
+    
+    <div>
+        <div class="container">
+            <div class="footcontent">
+                <img class="logofooter" src="resources/img/logo_dark.png">
+                <div class="footer">
+                    <div class="flex-footer">
+                        <div>
+                            <span>نبزه عن سوق الوقفة</span>
+                            <p>يمكنك مراسلتنا على البريد الإلكتروني</p>
+                            <a class="email">soukelwakfaa@gmail.com</a>
+                        </div>
+                        <div class="low">
+                            <span>قــــانــوني</span>
+                            <a>الشروط والاحكام</a>
+                            <a>من نحن </a>
+                        </div>
+                        <div>
+                            <span>الـدعــم</span>
+                            <div class="call">
+                                <a>+968205841556</a><i class="icon-call"></i>
+                            </div>
+                            <div class="call">
+                                <a>+968205841556</a><i class="icon-watsapp"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <span>التواصل الاجتماعي</span>
+                            <div class="social">
+                                <a><i class="icon-facebook"></i></a>
+                                <a><i class="icon-twitter"></i></a>
+                                <a><i class="icon-snap"></i></a>
+                                <a><i class="icon-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                                
+                    
+                    <div class="footer-overlay"></div>
+                    <div class="copyright">
+                        <article>حقوق الطبع والنشر 2020 | جميع الحقوق محفوظة لدي سوق الوقفة </article>
+                    </div>
+                </div>
+            </div>
+            
+                
+        </div>
+    </div>
+    
+   
+    <script src="vendors/js/jquery-3.3.1.min.js"></script>
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/js/rater.js"></script>  
+    <script src="vendors/js/html5shiv.js"></script>
+    <script src="resources/js/mainscript.js"></script>
+   
+
+</body>
+
+</html>

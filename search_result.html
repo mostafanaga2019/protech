@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Drop-down Menu Bar</title>
+    <link rel="stylesheet" href="resources/css/customfont.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,600,700&display=swap&subset=arabic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="container">
+                <div class="register container">
+                    <a href="signin.html">تسجيل الخروج</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="signup.html">انشاء حساب</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu_main container">
+            <div class="logo"><img src=" resources/img/logo_dark.png"></div>
+            <div class="container">
+                <nav class="menu clearfix">
+                    <label for="btn" class="icon">
+                        <span class="fa fa-bars"></span>
+                    </label>
+                    <input type="checkbox" id="btn">
+                    <ul>
+                        <li> <a class="active menuselect" href=" index.html">الرئيسية</a></li>
+                        <li>
+                            <label for="btn-1" class="show"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الإبل</label>
+                            <a class="menuselect" href="search_result.html"><i class="icon-left_arrow"></i>&nbsp;&nbsp; الإبل </a>
+                            <input type="checkbox" id="btn-1">
+                            <ul>
+                                <li class="camel"><a href="search_result.html">بعير</a></li>
+                                <li class="camel"><a href="search_result.html">ناقة</a></li>
+                                <li class="camel"><a href="search_result.html">حائل</a></li>
+                                <li class="camel"><a href="search_result.html">حاشي</a></li>
+                                <li class="camel"><a href="search_result.html">بكرة</a></li>
+                                <li class="camel"><a href="search_result.html">قعود</a></li>
+                                <li class="camel"><a href="search_result.html">جمل</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="btn-2" class="show"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الغنم</label>
+                            <a class="menuselect" href="search_result.html"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الغنم</a>
+                            <input type="checkbox" id="btn-2">
+                            <ul>
+                                <li class="cheap"><a href="search_result.html">نعيم</a></li>
+                                <li class="cheap"><a href="search_result.html">حري</a></li>
+                                <li class="cheap"><a href="search_result.html">نجدي</a></li>
+                                <li class="cheap"><a href="search_result.html">سواكني</a></li>
+                                <li class="cheap"><a href="search_result.html">سوداني</a></li>
+                                <li class="cheap"><a href="search_result.html">بربري</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="btn-3" class="show"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الماعز</label>
+                            <a class="menuselect" href="search_result.html"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الماعز</a>
+                            <input type="checkbox" id="btn-3">
+                            <ul>
+                                <li class="goat"><a href="search_result.html">عارضي</a></li>
+                                <li class="goat"><a href="search_result.html">شامي</a></li>
+                                <li class="goat"><a href="search_result.html">هولندي</a></li>
+                                <li class="goat"><a href="search_result.html">حجازي</a></li>
+                                <li class="goat"><a href="search_result.html">قبرصي</a></li>
+                                <li class="goat"><a href="search_result.html">كشتي</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="btn-4" class="show"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الأبقار</label>
+                            <a class="menuselect" href="search_result.html"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الأبقار</a>
+                            <input type="checkbox" id="btn-4">
+                            <ul>
+                                <li class="caw"><a href="search_result.html">عجل</a></li>
+                                <li class="caw"><a href="search_result.html">ثور</a></li>
+                                <li class="caw"><a href="search_result.html">حوليّة</a></li>
+                                <li class="caw"><a href="search_result.html">بكّيرية</a></li>
+                                <li class="caw"><a href="search_result.html">ابكرة</a></li>
+                                <li class="caw"><a href="search_result.html">اعشرة</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="btn-5" class="show"><i class="icon-left_arrow"></i>&nbsp;&nbsp;الخيل</label>
+                            <a class="menuselect" href="search_result.html"><i class="icon-left_arrow"></i>&nbsp;&nbsp; الخيل</a>
+                            <input type="checkbox" id="btn-5">
+                            <ul>
+                                <li class="horse"><a href="search_result.html">حصان</a></li>
+                                <li class="horse"><a href="search_result.html">فرس</a></li>
+                                <li class="horse"><a href="search_result.html">مهر</a></li>
+                                <li class="horse"><a href="search_result.html">مهره</a></li>
+                                <li class="horse"><a href="search_result.html">فلو</a></li>
+                                <li class="horse"><a href="search_result.html">فلوه</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <p class="addmedia"><a href=" addmedia.html"> اضف اعلانك هنا</a></p>
+            <nav class="utility container clearfix">
+                <ul>
+                    <li>
+                        <a href="#"><i class="icon-credit"></i><span>i</span></a>
+                    </li>
+                    <li><a href="#"><i class="icon-fav_fill"></i><span>1</span></a></li>
+                    <li>
+                        <a href="#"><i class="icon-account"></i></a>
+                        <ul>
+                            <li class="mymedia"><a href="user_profile.html">إعلاناتي</a></li>
+                            <li class="mypays"><a  href="user_profile.html">مشترياتي</a></li>
+                            <li class="myfavs"><a  href="user_profile.html">المفضلة</a></li>
+                            <li class="myevals"><a href="user_profile.html">تقييماتي</a></li>
+                            <li class="settings"><a href="user_profile.html">الإعدادات</a></li>
+                            <li class="signout"><a  href="user_profile.html">تسجيل الخروج</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    <section>
+        <div class="container">
+            <div class="mainbg spec">
+                <div class="mainflex">
+                    <div class="searchflex">
+                        <label>بحث في المدينة</label>                        
+                        <select name="slt-1" id="slt-1">
+                            <option></option>
+                            <option value="1">المدينة</option>
+                            <option value="2">المدينة</option>
+                            <option value="3">المدينة</option>
+                        </select>
+                    </div>
+                    <div class="searchflex">
+                        <label>بحث في الحي</label>                        
+                        <select name="slt-1" id="slt-1">
+                            <option></option>
+                            <option value="1">الحي</option>
+                            <option value="2">الحي</option>
+                            <option value="3">الحي</option>
+                        </select>
+                    </div>
+                    <div class="searchflex">
+                        <label>النوع</label>                        
+                        <select name="slt-1" id="slt-1">
+                            <option></option>
+                            <option value="1">النوع</option>
+                            <option value="2">النوع</option>
+                            <option value="3">النوع</option>
+                            <option value="3">النوع</option>
+                            <option value="3">النوع</option>
+                            <option value="3">النوع</option>
+                            <option value="3">النوع</option>
+                        </select>
+                    </div>
+                    <div class="searchflex">
+                        <label>الوزن</label> 
+                        <div class="myflex">
+                            <div>
+                                <span>كيلو</span>
+                                <input class="kilo" type="text">
+                            </div>
+                            <div>
+                                <span>جرام</span>
+                                <input class="gm" type="text">
+                            </div>                            
+                        </div> 
+                    </div>
+                    <div class="searchflex">
+                        <label>العمر</label> 
+                        <div class="myflex">
+                            <div>
+                                <span>سنه</span>
+                                <input class="kilo" type="text">
+                            </div>
+                            <div>
+                                <span>شهر</span>
+                                <input class="gm" type="text">
+                            </div>  
+                            <div>
+                                <span>يوم</span>
+                                <input class="gm" type="text">
+                            </div>                            
+                        </div> 
+                    </div >
+                    <div class="searchflex">
+                        <label>السعر</label> 
+                        <div class="myflex">
+                            <div>
+                                <span>من</span>
+                                <input class="kilo" type="text">
+                            </div>
+                            <div>
+                                <span>إلى</span>
+                                <input class="gm" type="text">
+                            </div>  
+                            <div>                                
+                                <a href="search_result.html" class="start-search"><i class="icon-search"></i><span>بحث</span></a>
+                            </div>                            
+                        </div> 
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="circle seach-circ">
+                    <a onclick="imgChangRd(this)" onmouseover="imgChangRd(this)" class="img"></a>
+                    <a onclick="imgChangNd(this)" onmouseover="imgChangNd(this)" class="current-img img"></a>
+                    <a onclick="imgChangSt(this)" onmouseover="imgChangSt(this)" class="img"></a>
+                </div>
+                <img class="scroll" src=" resources/img/mouse-scroll.gif">
+            </div>
+        </div>
+    </section>
+    <section class="new-result">
+        <div class="container">
+            <div class="result">
+                <i class="icon-arrow_long-left"><span>النتائج</span></i>
+                <div class="result-no"><p>بعير</p><figure>(956)</figure></div>                
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="recent">
+                <h2>الإبل</h2>
+                <div class="main-card">                    
+                    <div class="card">
+                        <a href="service_details.html" class="classify">
+                            <i class="icon-curve_left"><span>عارضي</span></i>
+                            <i class="icon-curve_right">
+                                <p><span>500</span>&nbsp;&nbsp;<span>SAR</span></p>
+                            </i>
+                        </a>
+                        <a href="#"><i class="icon-buy"></i></a>
+                        <i class="icon-fav_fill"><a href="#"></a></i>                        
+                        <a href="service_details.html" class="dark">
+                            <h3>إبل</h3>
+                            <div class="darkflex">
+                                <div class="flex"><span>الوزن</span>
+                                    <figure>5</figure>
+                                    <figure>كيلو جرام</figure>
+                                </div>
+                                <div class="flex"><span>العمر</span>
+                                    <div>
+                                        <figure>1</figure>
+                                        <figure>سنه</figure>
+                                        <figure>3</figure>
+                                        <figure>شهر</figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="service_details.html" class="card-footer">
+                            <div>                               
+                                <i class="icon-location"></i>
+                                <span>حائل</span>
+                            </div>
+                            <div>                                
+                                <i class="icon-location_bar"></i>
+                                <span>السويفلة</span>
+                            </div>
+                            <div>                                
+                                <i class="icon-clock"></i>
+                                <span>2020/15/3</span>
+                            </div>
+                        </a>
+                        <a href="service_details.html" class="image-container">                            
+                            <img src=" resources/img/camel_1.jpg">
+                        </a>
+                    </div>
+                    
+                   
+                    
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    
+   <section>
+       <div class="container">
+           <div class="pages">
+               <div onclick="prevpage(this)" class="arrows">
+                   <i class="icon-left_arrow"></i>
+                   <i class="icon-left_arrow"></i>
+               </div>
+               <a onclick="prevpage(this)" class="prev nextpage">السابق</a>
+               <a class="page-no current-page">1</a>
+               <a class="page-no">2</a>
+               <a class="page-no">3</a>
+               <a class="page-no">4</a>
+               <a class="page-no">5</a>
+               <a onclick="nextpage(this)" class="next nextpage">التالي</a>
+               <div onclick="nextpage(this)" class="arrows">
+                   <i class="icon-right_arrow"></i>
+                   <i  class="icon-right_arrow"></i>
+               </div>
+           </div>          
+           
+       </div>        
+   </section>
+    
+    <div>
+        <div class="container">
+            <div class="footcontent">
+                <img class="logofooter" src=" resources/img/logo_dark.png">
+                <div class="footer">
+                    <div class="flex-footer">
+                        <div>
+                            <span>نبزه عن سوق الوقفة</span>
+                            <p>يمكنك مراسلتنا على البريد الإلكتروني</p>
+                            <a class="email">soukelwakfaa@gmail.com</a>
+                        </div>
+                        <div class="low">
+                            <span>قــــانــوني</span>
+                            <a>الشروط والاحكام</a>
+                            <a>من نحن </a>
+                        </div>
+                        <div>
+                            <span>الـدعــم</span>
+                            <div class="call">
+                                <a>+968205841556</a><i class="icon-call"></i>
+                            </div>
+                            <div class="call">
+                                <a>+968205841556</a><i class="icon-watsapp"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <span>التواصل الاجتماعي</span>
+                            <div class="social">
+                                <a><i class="icon-facebook"></i></a>
+                                <a><i class="icon-twitter"></i></a>
+                                <a><i class="icon-snap"></i></a>
+                                <a><i class="icon-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                                
+                    
+                    <div class="footer-overlay"></div>
+                    <div class="copyright">
+                        <article>حقوق الطبع والنشر 2020 | جميع الحقوق محفوظة لدي سوق الوقفة </article>
+                    </div>
+                </div>
+            </div>
+            
+                
+        </div>
+    </div>
+   
+    <script src="vendors/js/jquery-3.3.1.min.js"></script>
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/js/html5shiv.js"></script>
+    <script src="resources/js/mainscript.js"></script>
+
+</body>
+
+</html>
