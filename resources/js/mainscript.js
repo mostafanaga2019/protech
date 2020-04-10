@@ -1,8 +1,11 @@
 const search = document.getElementById('commonsearch');
 NodeList.prototype.forEach = Array.prototype.forEach;
+var circs = document.querySelectorAll('.circ');
 let menus = document.querySelectorAll('.menuselect');
+let myPages = document.querySelectorAll('.page-no');
 let users = document.querySelectorAll('.user');
 let filters = document.querySelectorAll('.filter');
+var over = document.getElementById('setoverlay');
 
 let img = document.querySelectorAll('.img');
 menus.forEach(menu =>{
@@ -12,6 +15,63 @@ menus.forEach(menu =>{
     });
      
 });
+function eval(el){
+    over.classList.remove('hidden')
+    
+}
+function closeOver(){
+    over.classList.add('hidden');
+}
+
+$(document).ready(function () {
+            var options = {
+                max_value: 5,
+                step_size: 0.5,
+                update_input_field_name: $("#input2")
+            }
+            $(".rate").rate(options);
+        });
+
+
+
+function nextpage(el){
+   
+    var next = el.parentElement.querySelector('current-page').nextElementSibling;
+    
+    if (next) {
+           next.click();
+       }
+
+}
+
+myPages.forEach(mypage =>{
+    mypage.addEventListener('click',function(){
+        myPages.forEach(btn => btn.classList.remove('current-page'));
+        this.classList.add('current-page'); 
+    });
+     
+});
+
+function nextpage(el){
+   
+    var next = document.querySelector('.current-page').nextElementSibling;
+    
+    if (next) {
+           next.click();
+       }
+
+}
+function prevpage(el){
+   
+    var prev = document.querySelector('.current-page').previousElementSibling;
+    
+    if (prev) {
+           prev.click();
+       }
+
+}
+
+
 
 filters.forEach(filt =>{
     filt.addEventListener('click',function(){
@@ -20,6 +80,23 @@ filters.forEach(filt =>{
     });
      
 });
+
+function showPaypal(el) {
+            var paypal = document.getElementById('paypal');
+            var visa = document.getElementById('visa');
+            var selValue = el.value;
+            console.log(selValue)
+            if(selValue == 1){
+                paypal.classList.add("hidden");
+                visa.classList.remove("hidden");
+                
+            }else if (selValue == 2){
+                paypal.classList.remove("hidden");
+                visa.classList.add("hidden");
+            }
+
+
+        }
 
 
 users.forEach(user =>{
@@ -176,6 +253,15 @@ function editData(el){
     Inputdata.style.color = "#3e3e3e"
     cancel.style.visibility="visible";
 }
+function editSelect(el){
+    var selectData = el.parentElement.querySelector('select');    
+    var cancel = el.parentElement.querySelector('.cancel');
+    selectData.removeAttribute('disabled')
+    cancel.classList.remove('hidden');
+    el.style.color="red";
+    selectData.style.color = "#3e3e3e"
+    cancel.style.visibility="visible";
+}
 function cancelEdit(el){
      
     var Inputdata = el.parentElement.querySelector('input');
@@ -194,6 +280,19 @@ function cancelEdit(el){
     
     
 }
+function cancelSelect(el){
+     
+    var selectData = el.parentElement.querySelector('select');   
+    selectData.setAttribute('disabled', "true");
+    selectData.style.color="#9f9f9f"
+    el.style.visibility="hidden";
+    var edit = el.parentElement.querySelector('.edit');
+    edit.style.color="#000";
+    
+    
+}
+
+
 function loadImg(){
         var input = document.querySelector('input[type=file]');
         input.click();
@@ -204,6 +303,20 @@ function loadImgmulti(el){
         input.click();
         
     }
+
+
+function loadvideo(el){
+    var input = el.parentElement.querySelector('input[type=file]');
+    input.click();
+}
+
+function previewVideo(el){
+   var video = document.getElementById('myvideo');
+    video.classList.remove('hidden');
+    var img = document.querySelector('.addvideo').querySelector('img');
+    img.classList.add('small-img');
+   
+}
 
 function previewFile() {
         const preview = document.querySelector('#userImg');
@@ -241,6 +354,7 @@ function previewFilemulti(el) {
 
 
 
+
 function remDelete(el){
    var del = el.parentElement.parentElement.querySelector('.delete');
    del.style.visibility = "hidden"
@@ -259,27 +373,78 @@ function delAll(el){
    card.forEach(btn => btn.classList.add('hidden'));
 }
 
-function eval(el){
+
+function cont(el){    
+    circs.forEach(mycir => {
+        mycir.classList.add('cir-full');
+        mycir.classList.remove('cir-ghost');
+        var x = mycir.parentElement.parentElement;
+        x.classList.add('change');
+        var still = mycir.parentElement.parentElement.querySelector('.still');
+        still.classList.add('done');
+      
+    });
     
-}
-function cont(el){
     el.parentElement.classList.add('hidden');
     el.parentElement.parentElement.querySelector('.userInfo').classList.add('hidden');
     el.parentElement.parentElement.querySelector('.add').classList.remove('hidden');
     el.parentElement.parentElement.querySelector('.puplish').classList.remove('hidden');
-    $('.circ').addClass('cir-full');
+    
+   
+
     
 }
-//continue(this)
-//puplish(this)
+function contPay(el){    
+    circs.forEach(mycir => {
+        mycir.classList.add('cir-full');
+        mycir.classList.remove('cir-ghost');
+        var x = mycir.parentElement.parentElement;
+        x.classList.add('change');
+        var still = mycir.parentElement.parentElement.querySelector('.still');
+        still.classList.add('done');
+      
+    });
+    
+    el.parentElement.classList.add('hidden');
+    el.parentElement.parentElement.querySelector('.user-side').classList.add('hidden');
+    el.parentElement.parentElement.querySelector('.credit-side').classList.remove('hidden');    
+    el.parentElement.parentElement.querySelector('.puplish').classList.remove('hidden');
+    
+   
 
-$(document).ready(function () {
-            var options = {
-                max_value: 5,
-                step_size: 0.5,
-                update_input_field_name: $("#input2")
-            }
-            $(".rate").rate(options);
-        });
+    
+}
+
+
+       
+
+
+function formatString(e) {
+        var inputChar = String.fromCharCode(event.keyCode);
+        var code = event.keyCode;
+        var allowedKeys = [8];
+        if (allowedKeys.indexOf(code) !== -1) {
+            return;
+        }
+
+        event.target.value = event.target.value.replace(
+            /^([1-9]\/|[2-9])$/g, '0$1/' // 3 > 03/
+        ).replace(
+            /^(0[1-9]|1[0-2])$/g, '$1/' // 11 > 11/
+        ).replace(
+            /^([0-1])([3-9])$/g, '0$1/$2' // 13 > 01/3
+        ).replace(
+            /^(0?[1-9]|1[0-2])([0-9]{2})$/g, '$1/$2' // 141 > 01/41
+        ).replace(
+            /^([0]+)\/|[0]+$/g, '0' // 0/ > 0 and 00 > 0
+        ).replace(
+            /[^\d\/]|^[\/]*$/g, '' // To allow only digits and `/`
+        ).replace(
+            /\/\//g, '/' // Prevent entering more than 1 `/`
+        );
+    }
+
+
+
 
 
